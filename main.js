@@ -120,10 +120,10 @@ form.addEventListener("submit", (event) => {
 
   // Validating Consent Checkbox
   if (!consentInput.checked) {
-    showError(errConsent, true);
+    showError(errConsent, true, consentInput);
     isValid = false;
   } else {
-    showError(errConsent, false);
+    showError(errConsent, false, consentInput);
   }
   // If the form is valid, submit it
   if (isValid) {
